@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body{
+    background:
+      conic-gradient(at 50% 25%,#0000 75%,rgba(234, 255, 0, 0.22) 0),conic-gradient(at 50% 25%,#0000 75%,rgba(234, 255, 0, 0.22) 0) 100px 100px,
+      conic-gradient(at 50% 25%,#0000 75%,rgba(234, 255, 0, 0.22) 0) calc(2*100px) calc(2*100px),
+      conic-gradient(at 50% 25%,#0000 75%,rgba(234, 255, 0, 0.22) 0) calc(3*100px) calc(3*100px),
+      repeating-linear-gradient(135deg,rgba(69,69,69,0.23) 0 12.5%,rgba(18, 18, 18, 0.23) 0 25%);
+background-size: calc(4 * 100px) calc(4*100px);
+
+}
+
+
+
+@layer utilities {
+    @variants responsive {
+      /* Hide scrollbar for Chrome, Safari and Opera */
+      .no-scrollbar::-webkit-scrollbar {
+          display: none;
+      }
+
+      /* Hide scrollbar for IE, Edge and Firefox */
+      .no-scrollbar {
+          -ms-overflow-style: none;  /* IE and Edge */
+          scrollbar-width: none;  /* Firefox */
+      }
+    }
+  }
+
+@font-face {
+    font-family: "roboto";
+    src: url("/src/assets/fonts/Roboto-Regular.ttf");
+}
+
+
+
+
+@layer components{
+    .text-outline-black-bold{
+        text-shadow: 2px 2px 0px #000000, 2px 0px 0px #000000, 2px -2px 0px #000000, 0px -2px 0px #000000, -2px -2px 0px #000000, -2px 0px 0px #000000, -2px 2px 0px #000000, -2px 2px 0px #000000;
+    }
+    .text-outline-black-thin{
+        text-shadow: 1px 1px 0px #000000, 1px 0px 0px #000000, 1px -1px 0px #000000, 0px -1px 0px #000000, -1px -1px 0px #000000, -1px 0px 0px #000000, -1px 1px 0px #000000, -1px 1px 0px #000000;
+    }
+    .text-outline-white-bold{
+        text-shadow: 2px 2px 0px #FFFFFF, 2px 0px 0px #FFFFFF, 2px -2px 0px #FFFFFF, 0px -2px 0px #FFFFFF, -2px -2px 0px #FFFFFF, -2px 0px 0px #FFFFFF, -2px 2px 0px #FFFFFF, -2px 2px 0px #FFFFFF;
+    }
+    .text-outline-white-thin{
+        text-shadow: 1px 1px 0px #FFFFFF, 1px 0px 0px #FFFFFF, 1px -1px 0px #FFFFFF, 0px -1px 0px #FFFFFF, -1px -1px 0px #FFFFFF, -1px 0px 0px #FFFFFF, -1px 1px 0px #FFFFFF, -1px 1px 0px #FFFFFF;
+    }
+ 
+}
+
