@@ -34,7 +34,7 @@ You can think of Octowitter as the wall of your profile to take notes, similar t
 
 
 - [akar](https://iconer.app/akar/)
-- [basics](https://iconer.app/akar/)
+- [basics](https://iconer.app/basicons/)
 - [AutoAnim](https://auto-animate.formkit.com)
 
 
