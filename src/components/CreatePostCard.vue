@@ -112,7 +112,7 @@ const addNewPost = ()=>{
 <style scoped>
 .containerCreate{
     @apply
-    w-[26rem] 
+    md:w-[26rem] w-full mx-2 md:mx-0 
     bg-white
     rounded-md border border-violet-400
     p-6

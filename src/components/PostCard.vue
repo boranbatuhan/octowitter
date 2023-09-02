@@ -140,10 +140,12 @@ const contentTemp=ref(props.post.content)
 //post like
 const postLike = ()=>{
     store.dispatch("postLikeAction",props.post.postid)
+    localStorage.setItem('store', JSON.stringify(store.getters.getPosts))
 }
 //post dislike
 const postDislike = ()=>{
     store.dispatch("postDislikeAction",props.post.postid)
+    localStorage.setItem('store', JSON.stringify(store.getters.getPosts))
 
 }
 //post edit
@@ -151,6 +153,7 @@ const postEdit = ()=>{
     toggleEdit.value= !toggleEdit.value
     if(toggleEdit.value==true){
         contentTemp.value=props.post.content
+        
     }
 }
 const postEditAccept =()=>{
@@ -185,7 +188,7 @@ const formatDate = computed(()=>{
 <style scoped>
 .containerContent{
     @apply
-    w-[26rem] 
+    md:w-[26rem] w-full
     bg-white
     rounded-md border border-violet-400
     drop-shadow-lg

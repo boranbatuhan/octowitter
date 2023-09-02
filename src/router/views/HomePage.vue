@@ -12,7 +12,7 @@
             
             <!-- postlist start -->
             <ul class="containerContent no-scrollbar" v-auto-animate>
-                <li v-for="p in allPosts" :key="p.postid" >
+                <li v-for="p in allPosts" :key="p.postid" class="w-full md:px-0 ">
                     <PostCard  :post="p"/>
                 </li>
             </ul>
@@ -51,6 +51,7 @@ const allPosts = computed(()=>{
     flex items-start justify-start flex-col gap-2
     py-2 
     border-y border-violet-400
+    md:w-[26rem] w-full 
 }
 
 .logo{
